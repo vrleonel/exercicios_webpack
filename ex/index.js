@@ -1,3 +1,12 @@
-const logger = require('./logger');
+class Pessoa {
+  constructor(nome) {
+    this.nome = nome
+  }
 
-logger.info('Usando o padrão CommonJS!');
+  toString() {
+    return `Pessoa: ${this.nome}`
+  }
+}
+
+const pessoa = new Pessoa('Vitor');
+console.log(pessoa.toString())
